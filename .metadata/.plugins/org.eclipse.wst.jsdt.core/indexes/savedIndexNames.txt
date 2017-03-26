@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3472653114.index
+1313488946.index
+4171849915.index
+897581470.index
+3166102091.index
+2730085417.index
+863216539.index
