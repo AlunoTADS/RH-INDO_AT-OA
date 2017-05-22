@@ -1,0 +1,64 @@
+package br.ufpr.dac.rhindo.entity;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.List;
+
+
+/**
+ * The persistent class for the requisito database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Requisito.findAll", query="SELECT r FROM Requisito r")
+public class Requisito implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="idrequisito")
+	private Long id;
+
+	private String descricao;
+
+	//bi-directional many-to-many association to Cargo
+	@ManyToMany
+	@JoinTable(
+		name="requisitocargo"
+		, joinColumns={
+			@JoinColumn(name="idrequisito")
+			}
+		, inverseJoinColumns={
+			@JoinColumn(name="idcargo")
+			}
+		)
+	private List<Cargo> cargos;
+
+	public Requisito() {
+	}
+
+	public Long getId() {
+		return this.id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getDescricao() {
+		return this.descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public List<Cargo> getCargos() {
+		return this.cargos;
+	}
+
+	public void setCargos(List<Cargo> cargos) {
+		this.cargos = cargos;
+	}
+
+}

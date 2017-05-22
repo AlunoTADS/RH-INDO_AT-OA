@@ -6,29 +6,25 @@ import java.util.List;
 
 
 /**
- * The persistent class for the funcionario database table.
+ * The persistent class for the tipoatividade database table.
  * 
  */
 @Entity
-@NamedQuery(name="Funcionario.findAll", query="SELECT f FROM Funcionario f")
-public class Funcionario implements Serializable {
+@NamedQuery(name="TipoAtividade.findAll", query="SELECT t FROM TipoAtividade t")
+public class TipoAtividade implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="idfuncionario")
+	@Column(name="idtipoatividade")
 	private Long id;
 
-	private String email;
-
 	private String nome;
-
-	private String senha;
 
 	private String situacao;
 
 	//bi-directional many-to-one association to Atividade
-	@OneToMany(mappedBy="funcionario")
+	@OneToMany(mappedBy="tipoatividade")
 	private List<Atividade> atividades;
 
 	//bi-directional many-to-one association to Departamento
@@ -36,7 +32,7 @@ public class Funcionario implements Serializable {
 	@JoinColumn(name="iddepartamento")
 	private Departamento departamento;
 
-	public Funcionario() {
+	public TipoAtividade() {
 	}
 
 	public Long getId() {
@@ -47,28 +43,12 @@ public class Funcionario implements Serializable {
 		this.id = id;
 	}
 
-	public String getEmail() {
-		return this.email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getNome() {
 		return this.nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getSenha() {
-		return this.senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
 	}
 
 	public String getSituacao() {
@@ -89,14 +69,14 @@ public class Funcionario implements Serializable {
 
 	public Atividade addAtividade(Atividade atividade) {
 		getAtividades().add(atividade);
-		atividade.setFuncionario(this);
+		atividade.setTipoAtividade(this);
 
 		return atividade;
 	}
 
 	public Atividade removeAtividade(Atividade atividade) {
 		getAtividades().remove(atividade);
-		atividade.setFuncionario(null);
+		atividade.setTipoAtividade(null);
 
 		return atividade;
 	}
