@@ -61,6 +61,18 @@ CREATE TABLE public.Atividade (
 
 ALTER SEQUENCE public.seq_idatividade OWNED BY public.Atividade.idAtividade;
 
+CREATE SEQUENCE public.seq_idcargo;
+
+CREATE TABLE public.Cargo (
+                idCargo BIGINT NOT NULL DEFAULT nextval('public.seq_idcargo'),
+                nome VARCHAR(255) DEFAULT '' NOT NULL,
+                situacao CHAR(1) NOT NULL,
+                gerente CHAR(1) NOT NULL,
+                CONSTRAINT pk_cargo PRIMARY KEY (idCargo)
+);
+
+ALTER SEQUENCE public.seq_idcargo OWNED BY public.Cargo.idCargo;
+
 ALTER TABLE public.Funcionario ADD CONSTRAINT fk_iddepartamento_funcionario
 FOREIGN KEY (idDepartamento)
 REFERENCES public.Departamento (idDepartamento)

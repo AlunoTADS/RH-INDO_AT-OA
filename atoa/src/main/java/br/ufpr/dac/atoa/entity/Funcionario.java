@@ -35,6 +35,11 @@ public class Funcionario implements Serializable {
 	@ManyToOne
 	@JoinColumn(name="iddepartamento")
 	private Departamento departamento;
+	
+	//bi-directional many-to-one association to Cargo
+	@ManyToOne
+	@JoinColumn(name="idcargo")
+	private Cargo cargo;
 
 	public Funcionario() {
 	}
@@ -107,6 +112,14 @@ public class Funcionario implements Serializable {
 
 	public void setDepartamento(Departamento departamento) {
 		this.departamento = departamento;
+	}
+
+	public Cargo getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(Cargo cargo) {
+		this.cargo = cargo;
 	}
 
 }
