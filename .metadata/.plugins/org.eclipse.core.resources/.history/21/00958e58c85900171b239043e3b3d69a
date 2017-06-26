@@ -1,0 +1,170 @@
+package teste;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.List;
+
+
+/**
+ * The persistent class for the funcionario database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Funcionario.findAll", query="SELECT f FROM Funcionario f")
+public class Funcionario implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="idfuncionario")
+	private Long id;
+
+	private String celular;
+
+	private String cpf;
+
+	private String email;
+
+	private String nome;
+
+	private String rg;
+
+	private String senha;
+
+	//bi-directional many-to-one association to Departamentoalocafuncionario
+	@OneToMany(mappedBy="funcionario")
+	private List<Departamentoalocafuncionario> departamentoalocafuncionarios;
+
+	//bi-directional many-to-one association to Unidadefederativa
+	@ManyToOne
+	@JoinColumn(name="idunidadefederativarg")
+	private Unidadefederativa unidadefederativa1;
+
+	//bi-directional many-to-one association to Unidadefederativa
+	@ManyToOne
+	@JoinColumn(name="idunidadefederativareside")
+	private Unidadefederativa unidadefederativa2;
+
+	//bi-directional many-to-one association to Holerite
+	@OneToMany(mappedBy="funcionario")
+	private List<Holerite> holerites;
+
+	public Funcionario() {
+	}
+
+	public Long getId() {
+		return this.id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getCelular() {
+		return this.celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public String getCpf() {
+		return this.cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNome() {
+		return this.nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getRg() {
+		return this.rg;
+	}
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+
+	public String getSenha() {
+		return this.senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public List<Departamentoalocafuncionario> getDepartamentoalocafuncionarios() {
+		return this.departamentoalocafuncionarios;
+	}
+
+	public void setDepartamentoalocafuncionarios(List<Departamentoalocafuncionario> departamentoalocafuncionarios) {
+		this.departamentoalocafuncionarios = departamentoalocafuncionarios;
+	}
+
+	public Departamentoalocafuncionario addDepartamentoalocafuncionario(Departamentoalocafuncionario departamentoalocafuncionario) {
+		getDepartamentoalocafuncionarios().add(departamentoalocafuncionario);
+		departamentoalocafuncionario.setFuncionario(this);
+
+		return departamentoalocafuncionario;
+	}
+
+	public Departamentoalocafuncionario removeDepartamentoalocafuncionario(Departamentoalocafuncionario departamentoalocafuncionario) {
+		getDepartamentoalocafuncionarios().remove(departamentoalocafuncionario);
+		departamentoalocafuncionario.setFuncionario(null);
+
+		return departamentoalocafuncionario;
+	}
+
+	public Unidadefederativa getUnidadefederativa1() {
+		return this.unidadefederativa1;
+	}
+
+	public void setUnidadefederativa1(Unidadefederativa unidadefederativa1) {
+		this.unidadefederativa1 = unidadefederativa1;
+	}
+
+	public Unidadefederativa getUnidadefederativa2() {
+		return this.unidadefederativa2;
+	}
+
+	public void setUnidadefederativa2(Unidadefederativa unidadefederativa2) {
+		this.unidadefederativa2 = unidadefederativa2;
+	}
+
+	public List<Holerite> getHolerites() {
+		return this.holerites;
+	}
+
+	public void setHolerites(List<Holerite> holerites) {
+		this.holerites = holerites;
+	}
+
+	public Holerite addHolerite(Holerite holerite) {
+		getHolerites().add(holerite);
+		holerite.setFuncionario(this);
+
+		return holerite;
+	}
+
+	public Holerite removeHolerite(Holerite holerite) {
+		getHolerites().remove(holerite);
+		holerite.setFuncionario(null);
+
+		return holerite;
+	}
+
+}

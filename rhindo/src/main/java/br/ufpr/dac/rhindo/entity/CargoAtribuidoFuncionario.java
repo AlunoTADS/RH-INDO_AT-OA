@@ -10,28 +10,41 @@ import java.util.Date;
  * 
  */
 @Entity
-@NamedQuery(name="Cargoatribuidofuncionario.findAll", query="SELECT c FROM Cargoatribuidofuncionario c")
+@Table(name="cargoatribuidofuncionario")
+@NamedQuery(name="CargoAtribuidoFuncionario.findAll", query="SELECT c FROM CargoAtribuidoFuncionario c")
 public class CargoAtribuidoFuncionario implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@EmbeddedId
+	private CargoAtribuidoFuncionarioPK id;
+
 	@Temporal(TemporalType.DATE)
+	@Column(name="datadesatribuicao")
 	private Date dataDesatribuicao;
 
 	//bi-directional many-to-one association to Cargo
 	@ManyToOne
-	@JoinColumn(name="idcargo")
+	@JoinColumn(name="idcargo", nullable=false, insertable=false, updatable=false)
 	private Cargo cargo;
 
-	//bi-directional many-to-one association to Departamentoalocafuncionario
+	//bi-directional many-to-one association to DepartamentoAlocaFuncionario
 	@ManyToOne
 	@JoinColumns({
-		@JoinColumn(name="dataalocacao", referencedColumnName="dataalocacao"),
-		@JoinColumn(name="iddepartamento", referencedColumnName="iddepartamento"),
-		@JoinColumn(name="idfuncionario", referencedColumnName="idfuncionario")
+		@JoinColumn(name="dataalocacao", referencedColumnName="dataalocacao", nullable=false, insertable=false, updatable=false),
+		@JoinColumn(name="iddepartamento", referencedColumnName="iddepartamento", nullable=false, insertable=false, updatable=false),
+		@JoinColumn(name="idfuncionario", referencedColumnName="idfuncionario", nullable=false, insertable=false, updatable=false)
 		})
 	private DepartamentoAlocaFuncionario departamentoAlocaFuncionario;
 
 	public CargoAtribuidoFuncionario() {
+	}
+
+	public CargoAtribuidoFuncionarioPK getId() {
+		return this.id;
+	}
+
+	public void setId(CargoAtribuidoFuncionarioPK id) {
+		this.id = id;
 	}
 
 	public Date getDataDesatribuicao() {
@@ -50,12 +63,12 @@ public class CargoAtribuidoFuncionario implements Serializable {
 		this.cargo = cargo;
 	}
 
-	public DepartamentoAlocaFuncionario getDepartamentoalocafuncionario() {
+	public DepartamentoAlocaFuncionario getDepartamentoAlocaFuncionario() {
 		return this.departamentoAlocaFuncionario;
 	}
 
-	public void setDepartamentoalocafuncionario(DepartamentoAlocaFuncionario departamentoalocafuncionario) {
-		this.departamentoAlocaFuncionario = departamentoalocafuncionario;
-	}	
+	public void setDepartamentoAlocaFuncionario(DepartamentoAlocaFuncionario departamentoAlocaFuncionario) {
+		this.departamentoAlocaFuncionario = departamentoAlocaFuncionario;
+	}
 
 }

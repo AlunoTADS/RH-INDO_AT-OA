@@ -10,39 +10,37 @@ import java.math.BigDecimal;
  * 
  */
 @Entity
+@Table(name="holerite")
 @NamedQuery(name="Holerite.findAll", query="SELECT h FROM Holerite h")
 public class Holerite implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private Integer mes;
+	@EmbeddedId
+	private HoleritePK id;
 
-	private Integer ano;
-
+	@Column(name="quantidadehorastrabalhadas")
 	private Integer quantidadeHorasTrabalhadas;
 
+	@Column(name="salariobruto", precision=8, scale=2)
 	private BigDecimal salarioBruto;
 
+	@Column(name="salarioliquido", precision=8, scale=2)
 	private BigDecimal salarioLiquido;
 
 	//bi-directional many-to-one association to Funcionario
 	@ManyToOne
-	@JoinColumn(name="idfuncionario")
+	@JoinColumn(name="idfuncionario", nullable=false, insertable=false, updatable=false)
 	private Funcionario funcionario;
 
 	public Holerite() {
 	}
 
-	public Integer getMes() {
-		return this.mes;
+	public HoleritePK getId() {
+		return this.id;
 	}
-	public void setMes(Integer mes) {
-		this.mes = mes;
-	}
-	public Integer getAno() {
-		return this.ano;
-	}
-	public void setAno(Integer ano) {
-		this.ano = ano;
+
+	public void setId(HoleritePK id) {
+		this.id = id;
 	}
 
 	public Integer getQuantidadeHorasTrabalhadas() {

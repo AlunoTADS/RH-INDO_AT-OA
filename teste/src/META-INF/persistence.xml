@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="teste">
+		<class>br.ufpr.dac.rhindo.entity.CargoAtribuidoFuncionario</class>
+		<class>br.ufpr.dac.rhindo.entity.CargoAtribuidoFuncionarioPK</class>
+		<class>br.ufpr.dac.rhindo.entity.DepartamentoAlocaFuncionario</class>
+		<class>br.ufpr.dac.rhindo.entity.DepartamentoAlocaFuncionarioPK</class>
+		<class>br.ufpr.dac.rhindo.entity.UnidadeFederativa</class>
+		<class>br.ufpr.dac.rhindo.entity.Cargo</class>
+		<class>br.ufpr.dac.rhindo.entity.Cidade</class>
+		<class>br.ufpr.dac.rhindo.entity.CidadePK</class>
+		<class>br.ufpr.dac.rhindo.entity.Departamento</class>
+		<class>br.ufpr.dac.rhindo.entity.Funcionario</class>
+		<class>br.ufpr.dac.rhindo.entity.Holerite</class>
+		<class>br.ufpr.dac.rhindo.entity.HoleritePK</class>
+		<class>br.ufpr.dac.rhindo.entity.Requisito</class>
+	</persistence-unit>
+</persistence>

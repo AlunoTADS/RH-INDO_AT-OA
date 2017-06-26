@@ -1,0 +1,19 @@
+package br.ufpr.dac.rhindo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.ufpr.dac.rhindo.repository.FuncionarioRepository;
+
+@RestController
+@RequestMapping("funcionarioController")
+public class FuncionarioController {
+	
+	private final FuncionarioRepository funcionarioRepository;
+
+	@Autowired
+	FuncionarioController(FuncionarioRepository funcionarioRepository) {
+		this.funcionarioRepository = funcionarioRepository;
+	}
+}

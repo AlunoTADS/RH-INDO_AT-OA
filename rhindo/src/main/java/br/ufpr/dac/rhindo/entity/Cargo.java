@@ -11,30 +11,38 @@ import java.util.List;
  * 
  */
 @Entity
+@Table(name="cargo")
 @NamedQuery(name="Cargo.findAll", query="SELECT c FROM Cargo c")
 public class Cargo implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="idcargo")
+	@SequenceGenerator(name="seq_cargo", sequenceName="seq_cargo", allocationSize=1, initialValue=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq_cargo")
+	@Column(name="idcargo", unique=true, nullable=false)
 	private Long id;
 
+	@Column(length=1)
 	private String gerente;
 
+	@Column(length=255)
 	private String nome;
 
+	@Column(name="percentualimposto", precision=4, scale=4)
 	private BigDecimal percentualImposto;
 
+	@Column(name="quantidademinimahorasmes")
 	private Integer quantidadeMinimaHorasMes;
 
+	@Column(precision=8, scale=2)
 	private BigDecimal salario;
 
+	@Column(length=1)
 	private String situacao;
 
-	//bi-directional many-to-one association to Cargoatribuidofuncionario
+	//bi-directional many-to-one association to CargoAtribuidoFuncionario
 	@OneToMany(mappedBy="cargo")
-	private List<CargoAtribuidoFuncionario> cargoatribuidofuncionarios;
+	private List<CargoAtribuidoFuncionario> cargoAtribuidoFuncionarios;
 
 	//bi-directional many-to-many association to Requisito
 	@ManyToMany(mappedBy="cargos")
@@ -99,26 +107,26 @@ public class Cargo implements Serializable {
 		this.situacao = situacao;
 	}
 
-	public List<CargoAtribuidoFuncionario> getCargoatribuidofuncionarios() {
-		return this.cargoatribuidofuncionarios;
+	public List<CargoAtribuidoFuncionario> getCargoAtribuidoFuncionarios() {
+		return this.cargoAtribuidoFuncionarios;
 	}
 
-	public void setCargoatribuidofuncionarios(List<CargoAtribuidoFuncionario> cargoatribuidofuncionarios) {
-		this.cargoatribuidofuncionarios = cargoatribuidofuncionarios;
+	public void setCargoAtribuidoFuncionarios(List<CargoAtribuidoFuncionario> cargoAtribuidoFuncionarios) {
+		this.cargoAtribuidoFuncionarios = cargoAtribuidoFuncionarios;
 	}
 
-	public CargoAtribuidoFuncionario addCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoatribuidofuncionario) {
-		getCargoatribuidofuncionarios().add(cargoatribuidofuncionario);
-		cargoatribuidofuncionario.setCargo(this);
+	public CargoAtribuidoFuncionario addCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoAtribuidoFuncionario) {
+		getCargoAtribuidoFuncionarios().add(cargoAtribuidoFuncionario);
+		cargoAtribuidoFuncionario.setCargo(this);
 
-		return cargoatribuidofuncionario;
+		return cargoAtribuidoFuncionario;
 	}
 
-	public CargoAtribuidoFuncionario removeCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoatribuidofuncionario) {
-		getCargoatribuidofuncionarios().remove(cargoatribuidofuncionario);
-		cargoatribuidofuncionario.setCargo(null);
+	public CargoAtribuidoFuncionario removeCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoAtribuidoFuncionario) {
+		getCargoAtribuidoFuncionarios().remove(cargoAtribuidoFuncionario);
+		cargoAtribuidoFuncionario.setCargo(null);
 
-		return cargoatribuidofuncionario;
+		return cargoAtribuidoFuncionario;
 	}
 
 	public List<Requisito> getRequisitos() {

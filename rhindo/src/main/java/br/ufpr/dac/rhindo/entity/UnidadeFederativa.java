@@ -10,18 +10,34 @@ import java.util.List;
  * 
  */
 @Entity
-@NamedQuery(name="Unidadefederativa.findAll", query="SELECT u FROM Unidadefederativa u")
+@Table(name="unidadefederativa")
+@NamedQuery(name="UnidadeFederativa.findAll", query="SELECT u FROM UnidadeFederativa u")
 public class UnidadeFederativa implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="idunidadefederativa")
+	@SequenceGenerator(name="seq_unidadefederativa", sequenceName="seq_unidadefederativa", allocationSize=1, initialValue=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq_unidadefederativa")
+	@Column(name="idunidadefederativa", unique=true, nullable=false)
 	private Long id;
 
+	@Column(length=64)
 	private String nome;
 
+	@Column(length=1)
 	private String situacao;
+
+	//bi-directional many-to-one association to Cidade
+	@OneToMany(mappedBy="unidadeFederativa")
+	private List<Cidade> cidades;
+
+	//bi-directional many-to-one association to Funcionario
+	@OneToMany(mappedBy="unidadeFederativaRG")
+	private List<Funcionario> funcionariosRG;
+
+	//bi-directional many-to-one association to Funcionario
+	@OneToMany(mappedBy="unidadeFederativa")
+	private List<Funcionario> funcionarios;
 
 	public UnidadeFederativa() {
 	}
@@ -60,60 +76,60 @@ public class UnidadeFederativa implements Serializable {
 
 	public Cidade addCidade(Cidade cidade) {
 		getCidades().add(cidade);
-		cidade.setUnidadefederativa(this);
+		cidade.setUnidadeFederativa(this);
 
 		return cidade;
 	}
 
 	public Cidade removeCidade(Cidade cidade) {
 		getCidades().remove(cidade);
-		cidade.setUnidadefederativa(null);
+		cidade.setUnidadeFederativa(null);
 
 		return cidade;
 	}
 
-	public List<Funcionario> getFuncionarios1() {
-		return this.funcionarios1;
+	public List<Funcionario> getFuncionariosRG() {
+		return this.funcionariosRG;
 	}
 
-	public void setFuncionarios1(List<Funcionario> funcionarios1) {
-		this.funcionarios1 = funcionarios1;
+	public void setFuncionariosRG(List<Funcionario> funcionariosRG) {
+		this.funcionariosRG = funcionariosRG;
 	}
 
-	public Funcionario addFuncionarios1(Funcionario funcionarios1) {
-		getFuncionarios1().add(funcionarios1);
-		funcionarios1.setUnidadefederativa1(this);
+	public Funcionario addFuncionariosRG(Funcionario funcionario) {
+		getFuncionariosRG().add(funcionario);
+		funcionario.setUnidadeFederativaRG(this);
 
-		return funcionarios1;
+		return funcionario;
 	}
 
-	public Funcionario removeFuncionarios1(Funcionario funcionarios1) {
-		getFuncionarios1().remove(funcionarios1);
-		funcionarios1.setUnidadefederativa1(null);
+	public Funcionario removeFuncionariosRG(Funcionario funcionario) {
+		getFuncionariosRG().remove(funcionario);
+		funcionario.setUnidadeFederativaRG(null);
 
-		return funcionarios1;
+		return funcionario;
 	}
 
-	public List<Funcionario> getFuncionarios2() {
-		return this.funcionarios2;
+	public List<Funcionario> getFuncionarios() {
+		return this.funcionarios;
 	}
 
-	public void setFuncionarios2(List<Funcionario> funcionarios2) {
-		this.funcionarios2 = funcionarios2;
+	public void setFuncionarios(List<Funcionario> funcionarios) {
+		this.funcionarios = funcionarios;
 	}
 
-	public Funcionario addFuncionarios2(Funcionario funcionarios2) {
-		getFuncionarios2().add(funcionarios2);
-		funcionarios2.setUnidadefederativa2(this);
+	public Funcionario addFuncionarios(Funcionario funcionario) {
+		getFuncionarios().add(funcionario);
+		funcionario.setUnidadeFederativa(this);
 
-		return funcionarios2;
+		return funcionario;
 	}
 
-	public Funcionario removeFuncionarios2(Funcionario funcionarios2) {
-		getFuncionarios2().remove(funcionarios2);
-		funcionarios2.setUnidadefederativa2(null);
+	public Funcionario removeFuncionarios(Funcionario funcionario) {
+		getFuncionarios().remove(funcionario);
+		funcionario.setUnidadeFederativa(null);
 
-		return funcionarios2;
+		return funcionario;
 	}
 
 }

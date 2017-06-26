@@ -1,0 +1,63 @@
+package teste;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+
+/**
+ * The persistent class for the cidade database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Cidade.findAll", query="SELECT c FROM Cidade c")
+public class Cidade implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@EmbeddedId
+	private CidadePK id;
+
+	private String nome;
+
+	private String situacao;
+
+	//bi-directional many-to-one association to Unidadefederativa
+	@ManyToOne
+	@JoinColumn(name="idunidadefederativa")
+	private Unidadefederativa unidadefederativa;
+
+	public Cidade() {
+	}
+
+	public CidadePK getId() {
+		return this.id;
+	}
+
+	public void setId(CidadePK id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return this.nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getSituacao() {
+		return this.situacao;
+	}
+
+	public void setSituacao(String situacao) {
+		this.situacao = situacao;
+	}
+
+	public Unidadefederativa getUnidadefederativa() {
+		return this.unidadefederativa;
+	}
+
+	public void setUnidadefederativa(Unidadefederativa unidadefederativa) {
+		this.unidadefederativa = unidadefederativa;
+	}
+
+}

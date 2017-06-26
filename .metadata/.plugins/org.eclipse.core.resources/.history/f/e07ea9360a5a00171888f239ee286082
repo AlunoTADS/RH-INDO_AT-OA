@@ -1,0 +1,5 @@
+package br.ufpr.dac.rhindo.controller;
+
+public class FuncionarioController {
+
+}

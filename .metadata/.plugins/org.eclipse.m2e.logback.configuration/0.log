@@ -82,3 +82,132 @@
 2017-03-25 20:40:28,569 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B eclipse:eclipse
 2017-03-25 20:50:02,992 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo
 2017-03-25 20:50:02,997 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B eclipse:eclipse
+2017-06-24 15:01:42,380 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.ufpr.dac:rhindo:0.0.1-SNAPSHOT @ D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\pom.xml.
+2017-06-24 15:01:51,132 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:01:51,169 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-06-24 15:01:51,195 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:01:51,200 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-24 15:03:20,644 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:03:20,992 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-06-24 15:03:20,996 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:03:21,006 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-24 15:05:34,878 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:05:34,983 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-06-24 15:05:34,984 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:05:34,990 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-24 15:06:47,397 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:06:47,408 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-06-24 15:06:47,410 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:06:47,419 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-24 15:07:42,220 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:07:42,228 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-06-24 15:07:42,231 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:07:42,237 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-24 15:16:55,956 [Worker-33] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-24 15:16:56,699 [DefaultMetadataResolver-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
+2017-06-24 15:16:56,970 [DefaultMetadataResolver-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
+2017-06-24 15:16:57,215 [DefaultMetadataResolver-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
+2017-06-24 15:16:57,418 [DefaultMetadataResolver-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
+2017-06-24 15:16:57,597 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-maven-plugin/1.5.4.RELEASE/spring-boot-maven-plugin-1.5.4.RELEASE.pom
+2017-06-24 15:16:57,780 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-maven-plugin/1.5.4.RELEASE/spring-boot-maven-plugin-1.5.4.RELEASE.pom
+2017-06-24 15:16:57,956 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-tools/1.5.4.RELEASE/spring-boot-tools-1.5.4.RELEASE.pom
+2017-06-24 15:16:58,139 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-tools/1.5.4.RELEASE/spring-boot-tools-1.5.4.RELEASE.pom
+2017-06-24 15:16:58,323 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-parent/1.5.4.RELEASE/spring-boot-parent-1.5.4.RELEASE.pom
+2017-06-24 15:16:58,547 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-parent/1.5.4.RELEASE/spring-boot-parent-1.5.4.RELEASE.pom
+2017-06-24 15:16:58,718 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-dependencies/1.5.4.RELEASE/spring-boot-dependencies-1.5.4.RELEASE.pom
+2017-06-24 15:16:59,026 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-dependencies/1.5.4.RELEASE/spring-boot-dependencies-1.5.4.RELEASE.pom
+2017-06-24 15:16:59,204 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/com/fasterxml/jackson/jackson-bom/2.8.8/jackson-bom-2.8.8.pom
+2017-06-24 15:16:59,392 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/com/fasterxml/jackson/jackson-bom/2.8.8/jackson-bom-2.8.8.pom
+2017-06-24 15:16:59,656 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/spring-framework-bom/4.3.9.RELEASE/spring-framework-bom-4.3.9.RELEASE.pom
+2017-06-24 15:16:59,845 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/spring-framework-bom/4.3.9.RELEASE/spring-framework-bom-4.3.9.RELEASE.pom
+2017-06-24 15:17:00,040 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/data/spring-data-releasetrain/Ingalls-SR4/spring-data-releasetrain-Ingalls-SR4.pom
+2017-06-24 15:17:00,216 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/data/spring-data-releasetrain/Ingalls-SR4/spring-data-releasetrain-Ingalls-SR4.pom
+2017-06-24 15:17:00,392 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/data/build/spring-data-build/1.9.4.RELEASE/spring-data-build-1.9.4.RELEASE.pom
+2017-06-24 15:17:00,582 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/data/build/spring-data-build/1.9.4.RELEASE/spring-data-build-1.9.4.RELEASE.pom
+2017-06-24 15:17:00,767 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/integration/spring-integration-bom/4.3.10.RELEASE/spring-integration-bom-4.3.10.RELEASE.pom
+2017-06-24 15:17:00,951 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/integration/spring-integration-bom/4.3.10.RELEASE/spring-integration-bom-4.3.10.RELEASE.pom
+2017-06-24 15:17:01,157 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/security/spring-security-bom/4.2.3.RELEASE/spring-security-bom-4.2.3.RELEASE.pom
+2017-06-24 15:17:01,372 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/security/spring-security-bom/4.2.3.RELEASE/spring-security-bom-4.2.3.RELEASE.pom
+2017-06-24 15:17:01,593 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-maven-plugin/1.5.4.RELEASE/spring-boot-maven-plugin-1.5.4.RELEASE.jar
+2017-06-24 15:17:01,914 [Worker-33] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/boot/spring-boot-maven-plugin/1.5.4.RELEASE/spring-boot-maven-plugin-1.5.4.RELEASE.jar
+2017-06-24 15:17:03,442 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.ufpr.dac:rhindo:0.0.1-SNAPSHOT @ D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\pom.xml.
+2017-06-24 15:17:06,572 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /rhindo/src/main/java
+2017-06-24 15:17:06,573 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /rhindo/src/main/resources
+2017-06-24 15:17:06,573 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /rhindo/src/test/java
+2017-06-24 15:17:08,403 [Worker-33] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for rhindo
+2017-06-24 15:17:08,410 [Worker-33] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2017-06-24 15:18:07,539 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-06-24 15:18:08,055 [Worker-8] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo
+2017-06-24 15:18:08,056 [Worker-8] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B eclipse:eclipse
+2017-06-24 15:20:27,561 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.0.M17/tomcat-embed-jasper-9.0.0.M17.pom
+2017-06-24 15:20:27,824 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.0.M17/tomcat-embed-jasper-9.0.0.M17.pom
+2017-06-24 15:20:28,301 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-core/9.0.0.M17/tomcat-embed-core-9.0.0.M17.pom
+2017-06-24 15:20:28,497 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-core/9.0.0.M17/tomcat-embed-core-9.0.0.M17.pom
+2017-06-24 15:20:28,885 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-el/9.0.0.M17/tomcat-embed-el-9.0.0.M17.pom
+2017-06-24 15:20:29,069 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-el/9.0.0.M17/tomcat-embed-el-9.0.0.M17.pom
+2017-06-24 15:20:29,257 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.pom
+2017-06-24 15:20:29,555 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.pom
+2017-06-24 15:20:31,042 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.0.M17/tomcat-embed-jasper-9.0.0.M17.jar
+2017-06-24 15:20:31,790 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.0.M17/tomcat-embed-jasper-9.0.0.M17.jar
+2017-06-24 15:20:32,341 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-core/9.0.0.M17/tomcat-embed-core-9.0.0.M17.jar
+2017-06-24 15:20:35,024 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-core/9.0.0.M17/tomcat-embed-core-9.0.0.M17.jar
+2017-06-24 15:20:35,293 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-el/9.0.0.M17/tomcat-embed-el-9.0.0.M17.jar
+2017-06-24 15:20:35,735 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/apache/tomcat/embed/tomcat-embed-el/9.0.0.M17/tomcat-embed-el-9.0.0.M17.jar
+2017-06-24 15:20:36,062 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar
+2017-06-24 15:20:38,240 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar
+2017-06-24 15:21:43,025 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo
+2017-06-24 15:21:43,026 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2017-06-24 15:22:38,890 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.ufpr.dac:atoa:0.0.1-SNAPSHOT @ D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\atoa\pom.xml.
+2017-06-24 15:22:40,981 [Worker-45] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for atoa
+2017-06-24 15:22:41,091 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.ufpr.dac:rhindo:0.0.1-SNAPSHOT @ D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\pom.xml.
+2017-06-24 15:22:43,169 [Worker-45] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for rhindo
+2017-06-24 15:22:45,098 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:45,156 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-06-24 15:22:45,194 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:45,206 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\atoa\src\test\resources
+2017-06-24 15:22:45,206 [Worker-46] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of atoa
+2017-06-24 15:22:45,208 [Worker-46] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for atoa
+2017-06-24 15:22:45,215 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:47,783 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:47,791 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-06-24 15:22:47,796 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:47,803 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-24 15:22:47,804 [Worker-46] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of rhindo
+2017-06-24 15:22:47,804 [Worker-46] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for rhindo
+2017-06-24 15:22:47,809 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:58,075 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:58,087 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-24 15:22:58,088 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 15:22:58,096 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-24 18:51:26,847 [Worker-98] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 18:51:26,858 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-24 18:51:26,860 [Worker-98] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 18:51:26,868 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-25 13:08:29,320 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:08:29,374 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-25 13:08:29,375 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:08:29,383 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-25 13:12:01,488 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:12:01,505 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-25 13:12:01,506 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:12:01,514 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-25 13:15:04,156 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:15:04,165 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-25 13:15:04,167 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:15:04,172 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-25 13:21:42,313 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:21:42,327 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-25 13:21:42,328 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:21:42,336 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-25 13:22:59,530 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:22:59,542 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-25 13:22:59,546 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:22:59,553 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-25 13:27:44,779 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:27:44,812 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-25 13:27:44,814 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:27:44,822 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources
+2017-06-25 13:33:05,514 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:33:05,529 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-25 13:33:05,530 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 13:33:05,574 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFPR\5 Periodo\TI162 ­ Desenvolvimento de Aplicações Corporativas\RH-INDO_AT-OA\rhindo\src\test\resources

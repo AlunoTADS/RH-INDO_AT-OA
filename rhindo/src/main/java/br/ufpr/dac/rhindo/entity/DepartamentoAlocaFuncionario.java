@@ -11,28 +11,41 @@ import java.util.List;
  * 
  */
 @Entity
-@NamedQuery(name="Departamentoalocafuncionario.findAll", query="SELECT d FROM Departamentoalocafuncionario d")
+@Table(name="departamentoalocafuncionario")
+@NamedQuery(name="DepartamentoAlocaFuncionario.findAll", query="SELECT d FROM DepartamentoAlocaFuncionario d")
 public class DepartamentoAlocaFuncionario implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@EmbeddedId
+	private DepartamentoAlocaFuncionarioPK id;
+
 	@Temporal(TemporalType.DATE)
+	@Column(name="datadesalocacao")
 	private Date dataDesalocacao;
 
-	//bi-directional many-to-one association to Cargoatribuidofuncionario
-	@OneToMany(mappedBy="departamentoalocafuncionario")
+	//bi-directional many-to-one association to CargoAtribuidoFuncionario
+	@OneToMany(mappedBy="departamentoAlocaFuncionario")
 	private List<CargoAtribuidoFuncionario> cargoAtribuidoFuncionarios;
 
 	//bi-directional many-to-one association to Departamento
 	@ManyToOne
-	@JoinColumn(name="iddepartamento")
+	@JoinColumn(name="iddepartamento", nullable=false, insertable=false, updatable=false)
 	private Departamento departamento;
 
 	//bi-directional many-to-one association to Funcionario
 	@ManyToOne
-	@JoinColumn(name="idfuncionario")
+	@JoinColumn(name="idfuncionario", nullable=false, insertable=false, updatable=false)
 	private Funcionario funcionario;
 
 	public DepartamentoAlocaFuncionario() {
+	}
+
+	public DepartamentoAlocaFuncionarioPK getId() {
+		return this.id;
+	}
+
+	public void setId(DepartamentoAlocaFuncionarioPK id) {
+		this.id = id;
 	}
 
 	public Date getDataDesalocacao() {
@@ -43,26 +56,26 @@ public class DepartamentoAlocaFuncionario implements Serializable {
 		this.dataDesalocacao = dataDesalocacao;
 	}
 
-	public List<CargoAtribuidoFuncionario> getCargoatribuidofuncionarios() {
+	public List<CargoAtribuidoFuncionario> getCargoAtribuidoFuncionarios() {
 		return this.cargoAtribuidoFuncionarios;
 	}
 
-	public void setCargoatribuidofuncionarios(List<CargoAtribuidoFuncionario> cargoatribuidofuncionarios) {
-		this.cargoAtribuidoFuncionarios = cargoatribuidofuncionarios;
+	public void setCargoAtribuidoFuncionarios(List<CargoAtribuidoFuncionario> cargoAtribuidoFuncionarios) {
+		this.cargoAtribuidoFuncionarios = cargoAtribuidoFuncionarios;
 	}
 
-	public CargoAtribuidoFuncionario addCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoatribuidofuncionario) {
-		getCargoatribuidofuncionarios().add(cargoatribuidofuncionario);
-		cargoatribuidofuncionario.setDepartamentoalocafuncionario(this);
+	public CargoAtribuidoFuncionario addCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoAtribuidoFuncionario) {
+		getCargoAtribuidoFuncionarios().add(cargoAtribuidoFuncionario);
+		cargoAtribuidoFuncionario.setDepartamentoAlocaFuncionario(this);
 
-		return cargoatribuidofuncionario;
+		return cargoAtribuidoFuncionario;
 	}
 
-	public CargoAtribuidoFuncionario removeCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoatribuidofuncionario) {
-		getCargoatribuidofuncionarios().remove(cargoatribuidofuncionario);
-		cargoatribuidofuncionario.setDepartamentoalocafuncionario(null);
+	public CargoAtribuidoFuncionario removeCargoatribuidofuncionario(CargoAtribuidoFuncionario cargoAtribuidoFuncionario) {
+		getCargoAtribuidoFuncionarios().remove(cargoAtribuidoFuncionario);
+		cargoAtribuidoFuncionario.setDepartamentoAlocaFuncionario(null);
 
-		return cargoatribuidofuncionario;
+		return cargoAtribuidoFuncionario;
 	}
 
 	public Departamento getDepartamento() {

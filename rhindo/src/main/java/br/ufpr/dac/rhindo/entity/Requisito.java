@@ -10,15 +10,18 @@ import java.util.List;
  * 
  */
 @Entity
+@Table(name="requisito")
 @NamedQuery(name="Requisito.findAll", query="SELECT r FROM Requisito r")
 public class Requisito implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="idrequisito")
+	@SequenceGenerator(name="seq_requisito", sequenceName="seq_requisito", allocationSize=1, initialValue=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq_requisito")
+	@Column(name="idrequisito", unique=true, nullable=false)
 	private Long id;
 
+	@Column(length=255)
 	private String descricao;
 
 	//bi-directional many-to-many association to Cargo
@@ -26,10 +29,10 @@ public class Requisito implements Serializable {
 	@JoinTable(
 		name="requisitocargo"
 		, joinColumns={
-			@JoinColumn(name="idrequisito")
+			@JoinColumn(name="idrequisito", nullable=false)
 			}
 		, inverseJoinColumns={
-			@JoinColumn(name="idcargo")
+			@JoinColumn(name="idcargo", nullable=false)
 			}
 		)
 	private List<Cargo> cargos;
